@@ -34,11 +34,11 @@ export default function HeroSection() {
                 <Button variant="outline" size={'lg'} className='shadow-lg'>Saiba Mais</Button>
               </div>
             </div>
-            <div className={`uppercase ${oswald.className} flex flex-col gap-4 mt-20`} >
+            <div className={`uppercase font-semibold flex flex-col gap-4 mt-20`} >
               <h2 className='' >o que você ganha</h2>
-              <div className='flex flex-wrap gap-10'>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
               {card.map((card, i) => (
-              <div key={i} className={`flex items-center gap-2 w-32`}>
+              <div key={i} className={`flex items-center gap-2`}>
                   <card.icon aria-hidden="true" className="size-8 " />
                   <span>{card.name}</span>
               </div>
