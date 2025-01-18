@@ -28,15 +28,15 @@ export default function FAQ() {
               </p>
               <div className="flex -space-x-2">
                 <Avatar className="border-2 border-white">
-                  <AvatarImage src="/placeholder.svg?height=40&width=40" />
+                  <AvatarImage src="https://github.com/shadcn.png" />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
                 <Avatar className="border-2 border-white">
-                  <AvatarImage src="/placeholder.svg?height=40&width=40" />
+                  <AvatarImage src="https://github.com/shadcn.png" />
                   <AvatarFallback>JD</AvatarFallback>
                 </Avatar>
                 <Avatar className="border-2 border-white">
-                  <AvatarImage src="/placeholder.svg?height=40&width=40" />
+                  <AvatarImage src="https://github.com/shadcn.png" />
                   <AvatarFallback>MK</AvatarFallback>
                 </Avatar>
               </div>

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,22 +28,30 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className={`text-xl font-bold ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
-              Logo
+              <Image 
+                src={'/logo.png'}
+                width={50}
+                height={50}
+                alt='asdasda'
+              />
             </Link>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <Link href="/" className={`hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium ${isScrolled ? 'text-gray-600 hover:text-gray-800' : 'text-white'}`}>
+              <Link href="/" className={`hover:text-gray-300 px-3 py-2 rounded-md text-md font-medium ${isScrolled ? 'text-gray-600 hover:text-gray-800' : 'bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text'}`}>
                 Home
               </Link>
-              <Link href="/about" className={`hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium ${isScrolled ? 'text-gray-600 hover:text-gray-800' : 'text-white'}`}>
-                About
+              <Link href="/about" className={`hover:text-gray-300 px-3 py-2 rounded-md text-md font-medium ${isScrolled ? 'text-gray-600 hover:text-gray-800' : 'bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text'}`}>
+                Sobre Mim
               </Link>
-              <Link href="/services" className={`hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium ${isScrolled ? 'text-gray-600 hover:text-gray-800' : 'text-white'}`}>
-                Services
+              <Link href="/services" className={`hover:text-gray-300 px-3 py-2 rounded-md text-md font-medium ${isScrolled ? 'text-gray-600 hover:text-gray-800' : 'bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text'}`}>
+                Serviços
               </Link>
-              <Link href="/contact" className={`hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium ${isScrolled ? 'text-gray-600 hover:text-gray-800' : 'text-white'}`}>
-                Contact
+              <Link href="/services" className={`hover:text-gray-300 px-3 py-2 rounded-md text-md font-medium ${isScrolled ? 'text-gray-600 hover:text-gray-800' : 'bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text'}`}>
+                Preços
+              </Link>
+              <Link href="/contact" className={`hover:text-gray-300 px-3 py-2 rounded-md text-md font-medium ${isScrolled ? 'text-gray-600 hover:text-gray-800' : 'bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text'}`}>
+                Contato
               </Link>
             </div>
           </div>
