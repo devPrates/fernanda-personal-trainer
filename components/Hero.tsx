@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Heart, Dumbbell, Headset, Users } from 'lucide-react'
+import { ArrowRight, Heart, Dumbbell, Headset, Users, Smartphone } from 'lucide-react'
 
 export default function Hero() {
     return (
@@ -46,12 +46,12 @@ export default function Hero() {
                         </div>
                         <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
                             <Users className="h-12 w-12 mb-4" />
-                            <h3 className="text-lg font-semibold mb-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">Mentorias online</h3>
+                            <h3 className="text-lg font-semibold mb-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">Mentorias Online</h3>
                             <p>Análise e definição de treinos semanais.</p>
                         </div>
                         <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-                            <Headset className="h-12 w-12 mb-4" />
-                            <h3 className="text-lg font-semibold mb-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">Acompanhamento</h3>
+                            <Smartphone className="h-12 w-12 mb-4" />
+                            <h3 className="text-lg font-semibold mb-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">App para Treino</h3>
                             <p>Contato 24 horas para tirar duvidas.</p>
                         </div>
                     </div>
