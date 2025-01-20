@@ -54,7 +54,7 @@ export default function Footer() {
           CREF: 12345-G/XX - Fernanda Prates Bitencourt
         </p>
         <p className="text-sm text-gray-400">
-          &copy; {new Date().getFullYear()} develop by Gabriel Prates.
+          &copy; {new Date().getFullYear()} developed by Gabriel Prates.
         </p>
       </div>
     </footer>
