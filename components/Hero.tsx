@@ -25,11 +25,11 @@ export default function Hero() {
                         <Heart className='size-4 text-yellow-500' />
 
                 </div>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Transforme Seu <span className='rounded-xl bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text'>Corpo</span>, Transforme Sua <span className='p-1 rounded-xl  bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text'>Vida</span>!</h1>
-                    <p className="text-xl mb-8">aproveite a oportunidade, é hora de entrar na melhor forma da sua vida</p>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Alcance seus <span className="bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text"> objetivos </span> com treinamento  <span className="bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text"> personalizado!</span> </h1>
+                    <p className="text-xl mb-8">Aproveite a oportunidade, é hora de entrar na melhor forma da sua vida.</p>
 
                     <div className="space-x-4 mb-12">
-                        <Button variant="default" size="lg">
+                        <Button variant="default" size="lg" className="bg-purple-500">
                             Ver Planos
                             <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
@@ -42,17 +42,17 @@ export default function Hero() {
                         <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
                             <Dumbbell className="h-12 w-12 mb-4" />
                             <h3 className="text-lg font-semibold mb-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">Personal Trainer</h3>
-                            <p>Treinos personalizado para o seu resultado.</p>
+                            <p>Especialista em treinos para alcancar seus objetivos</p>
                         </div>
                         <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
                             <Users className="h-12 w-12 mb-4" />
-                            <h3 className="text-lg font-semibold mb-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">Mentorias Online</h3>
-                            <p>Análise e definição de treinos semanais.</p>
+                            <h3 className="text-lg font-semibold mb-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">Consultoria Online</h3>
+                            <p>Acompanhamento personalizados e individuais</p>
                         </div>
                         <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
                             <Smartphone className="h-12 w-12 mb-4" />
                             <h3 className="text-lg font-semibold mb-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">App para Treino</h3>
-                            <p>Contato 24 horas para tirar duvidas.</p>
+                            <p>Aplicativo para acompanhamento de treino</p>
                         </div>
                     </div>
                 </div>
