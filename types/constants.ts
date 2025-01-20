@@ -1,4 +1,4 @@
-import { Users, Dumbbell, Salad, Award } from 'lucide-react'
+import { Users, Dumbbell, Salad, Award, GraduationCap } from 'lucide-react'
 import { type LucideIcon } from 'lucide-react'
 
 export interface Quality {
@@ -8,15 +8,14 @@ export interface Quality {
 }
 
 export const trainerInfo = {
-  name: "Fernanda Bitencourt",
+  name: "Fernanda Prates Bitencourt",
+  surname: "Fernanda Personal",
   title: "Personal Trainer",
-  description: "Com mais de 03 anos de experiência, minha missão é transformar vidas através do fitness e da nutrição personalizada.",
+  description: "Olá, sou personal trainer e ofereço treinos personalizados que respeitam suas necessidades e limitações, garantindo resultados seguros e eficazes. Se você busca emagrecimento, ganho de massa muscular ou mais disposição no dia a dia, estou aqui para te apoiar. Vamos juntos transformar sua saúde e alcançar o seu melhor!",
   qualities: [
-    { title: "Experiência", description: "03+ anos como personal trainer", icon: Users },
-    { title: "Especialidades", description: "Perda de peso, Musculação", icon: Dumbbell },
-    { title: "Abordagem", description: "Treinamento personalizado e suporte contínuo", icon: Salad },
+    { title: "Especialidades", description: "Perda de peso, Musculação", icon: GraduationCap },
     { title: "Resultados", description: "Centenas de clientes satisfeitos e transformados", icon: Award },
   ] as Quality[],
-  cta: "Comece sua jornada fitness hoje!",
+  cta: "Vamos juntos nessa!",
 };
 

@@ -54,7 +54,7 @@ export default function Hero() {
           </p>
 
           <div className="space-x-4 mb-12">
-            <Button variant="default" size="lg" className="bg-purple-500">
+            <Button variant="default" size="lg">
               Ver Planos
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

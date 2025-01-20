@@ -45,7 +45,7 @@ export default function Navbar() {
                 Sobre Mim
               </Link>
               <Link href="/services" className={`hover:text-gray-300 px-3 py-2 rounded-md text-md font-medium ${isScrolled ? 'text-gray-600 hover:text-gray-800' : 'bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text'}`}>
-                Serviços
+                Consultoria
               </Link>
               <Link href="/services" className={`hover:text-gray-300 px-3 py-2 rounded-md text-md font-medium ${isScrolled ? 'text-gray-600 hover:text-gray-800' : 'bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text'}`}>
                 Preços
