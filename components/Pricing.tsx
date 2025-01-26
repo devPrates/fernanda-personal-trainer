@@ -20,7 +20,7 @@ export default function Pricing() {
   ]
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center" id="prices">
+    <div className="min-h-screen w-full flex items-center justify-center mb-20 mt-6 sm:mt-0 sm:mb-0" id="prices">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-20">Porque Escolher meu trabalho?</h1>
         <div className="flex flex-col md:flex-row gap-8 items-center justify-around">

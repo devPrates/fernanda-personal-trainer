@@ -1,34 +1,34 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Laptop, Smartphone, Tablet, Cloud, Shield, Zap } from "lucide-react"
+import { NotebookPen, UserPlus, Youtube, ClipboardPenLine, ClipboardList, Headset } from "lucide-react"
 
 const features = [
   {
-    icon: Laptop,
+    icon: NotebookPen,
     title: "Treinametos personalizados",
     description: "Treino sob medida para resultados reais, com flexibilidade para treinar onde você preferir, seja em casa ou ao ar-livre.",
   },
   {
-    icon: Tablet,
+    icon: UserPlus,
     title: "Acompanhamento Contínuo",
     description: "tutorial de como tirar suas medidas e fotos para monitoramento dos seus progressos.",
   },
   {
-    icon: Smartphone,
+    icon: Youtube,
     title: "Biblioteca de Videos",
     description: "Videos explicativos e orientações detalhadas ensinando a execução correta do movimento de cada exercicio.",
   },
   {
-    icon: Cloud,
+    icon: ClipboardPenLine,
     title: "Avaliação Inicial online",
     description: "Questionario de anamineze direto no aplicativo para entender seus objetivos.",
   },
   {
-    icon: Shield,
+    icon: ClipboardList,
     title: "Análise de Exercicios",
     description: "Atraves de videos enviados no whatsapp para correção dos movimentos.",
   },
   {
-    icon: Zap,
+    icon: Headset,
     title: "Suporte e Motivação",
     description: "Estou ao seu lado em cada etapa, garantindo foco e resultados.",
   },
