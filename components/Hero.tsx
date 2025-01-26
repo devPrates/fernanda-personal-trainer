@@ -1,9 +1,17 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Dumbbell, Users, Smartphone } from "lucide-react";
 
 export default function Hero() {
+  const handleScrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   return (
-    <div className="relative min-h-screen flex items-center">
+    <div className="relative min-h-screen flex items-center" id="home">
       {/* Background Image */}
       <div>
         {/* Background image for larger screens */}
@@ -34,7 +42,7 @@ export default function Hero() {
         <div className="w-full lg:w-2/3 xl:w-1/2">
           <div className="text-primary flex gap-2 font-bold items-center py-2">
             <span className="bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">
-              Seja bem vindo
+              Seja bem vinda
             </span>
             <Heart className="size-4 text-yellow-500" />
           </div>
@@ -43,23 +51,36 @@ export default function Hero() {
             <span className="bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">
               objetivos
             </span>{" "}
-            com treinamento{" "}
+            a melhor {" "}
             <span className="bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">
-              personalizado!
+              Consultoria Online!
             </span>
           </h1>
           <p className="text-xl mb-8">
-            Aproveite a oportunidade, é hora de entrar na melhor forma da sua
-            vida.
+            Seja para treinar na <span className="bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">
+              academia{" "}
+            </span> 
+            ou no conforto da sua{" "}
+            <span className="bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">
+              casa
+            </span>, eu posso ajudar você a conquistar o corpo que sempre quis!
           </p>
 
           <div className="space-x-4 mb-12">
-            <Button variant="default" size="lg">
-              Ver Planos
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button variant="outline" size="lg" className="text-black">
+            <Button 
+              variant="default" 
+              size="lg"
+              onClick={() => handleScrollToSection('about')}
+            >
               Saiba Mais
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-black"
+              onClick={() => handleScrollToSection('prices')}
+            >
+              Ver Plano
             </Button>
           </div>
         </div>

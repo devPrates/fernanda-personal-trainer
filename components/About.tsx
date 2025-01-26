@@ -7,8 +7,14 @@ import { ArrowRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 export default function AboutSection() {
+  const handleScrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   return (
-    <section className="bg-gradient-to-b from-primary/10 to-background py-16 md:py-24">
+    <section className="py-16 md:py-24" id='about'>
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 lg:pr-12 mb-12 lg:mb-0">
@@ -17,7 +23,7 @@ export default function AboutSection() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <h2 className="text-4xl font-bold mb-6 text-primary">{trainerInfo.surname}</h2>
+              <h2 className="text-4xl font-bold mb-6 text-primary">{trainerInfo.name}</h2>
               <p className="text-xl text-muted-foreground mb-8 text-justify pr-3 sm:pr-0">
                 {trainerInfo.description}
               </p>
@@ -45,9 +51,12 @@ export default function AboutSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.7 }}
               >
-                <Button size="lg" className="w-full sm:w-2/3 group text-lg px-8 py-3">
+                <Button 
+                  size="lg" 
+                  className="w-full sm:w-2/3 group text-lg px-8 py-3"
+                  onClick={() => handleScrollToSection('prices')}
+                >
                   {trainerInfo.cta}
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Button>
               </motion.div>
             </motion.div>

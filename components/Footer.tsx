@@ -4,6 +4,19 @@ import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Footer() {
+  const menuItems = [
+    { name: 'Home', id: 'home' },
+    { name: 'Sobre Mim', id: 'about' },
+    { name: 'Consultoria', id: 'services' },
+    { name: 'Preços', id: 'prices' },
+  ]
+  
+  const handleScrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' }) // Fechar o menu no mobile após o clique
+    }
+  }
   return (
     <footer className="text-white py-6">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
@@ -20,12 +33,15 @@ export default function Footer() {
 
         {/* Navegação */}
         <nav className="mb-4 lg:mb-0">
-          <ul className="flex space-x-6 justify-center">
-            <li><a href="#" className="text-gray-300 hover:text-white">Home</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Sobre</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Serviços</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white">Contato</a></li>
-          </ul>
+          {menuItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => handleScrollToSection(item.id)}
+              className={`text-gray-300 hover:text-gray-400 px-3 py-2 rounded-md text-md font-medium`}
+            >
+              {item.name}
+            </button>
+          ))}
         </nav>
 
         {/* Redes sociais */}
@@ -33,15 +49,11 @@ export default function Footer() {
           <a href="#" className="text-gray-300 hover:text-white">
             <Facebook className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-300 hover:text-white">
-            <Twitter className="w-6 h-6" />
-          </a>
+
           <a href="#" className="text-gray-300 hover:text-white">
             <Instagram className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-300 hover:text-white">
-            <Linkedin className="w-6 h-6" />
-          </a>
+
         </div>
       </div>
 
@@ -54,7 +66,7 @@ export default function Footer() {
           CREF: 12345-G/XX - Fernanda Prates Bitencourt
         </p>
         <p className="text-sm text-gray-400">
-          &copy; {new Date().getFullYear()} developed by Gabriel Prates.
+          &copy; {new Date().getFullYear()} desenvolvido por Gabriel Prates.
         </p>
       </div>
     </footer>
