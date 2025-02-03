@@ -62,7 +62,12 @@ export default function Hero() {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <img src="/mobile-image.svg" alt="Mulher fazendo exercícios" className="w-[700px]"></img>
+            <Image
+              src="/mobile-image.png"
+              alt="Hero Image"
+              width={800}
+              height={500}
+            />
           </div>
         </div>
       </div>
