@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import { trainerInfo, Quality } from '@/types/constants'
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 export default function AboutSection() {

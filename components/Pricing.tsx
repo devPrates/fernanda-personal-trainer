@@ -1,22 +1,24 @@
 import { CheckCircle, Star } from "lucide-react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import Image from "next/image"
 
 export default function Pricing() {
   const benefits = [
-    "Atendimento humanizado e próximo",
-    "Treinos dinâmicos e eficientes",
-    "Suporte direto para dúvidas e orientações",
-    "Acompanhamento de resultados em tempo real",
-    "Suporte via Whatsapp de segunda a sexta",
+    "Atendimento humanizado e próximo.",
+    "Treinos dinâmicos e eficientes.",
+    "Suporte direto para dúvidas e orientações.",
+    "Acompanhamento de resultados em tempo real.",
+    "Suporte via Whatsapp de segunda a sexta.",
   ]
 
   const planFeatures = [
-    "Acesso ao aplicativo",
-    "Atualização mensal de treino",
-    "Anamineze inicial, medidas e foto",
-    "Video dos exercícios no app",
-    "Análise de execução do exercício"
+    "Acesso ao aplicativo.",
+    "Atualização mensal de treino.",
+    "Anamnese inicial, medidas e foto.",
+    "Video dos exercícios no app.",
+    "Análise de execução do exercício."
   ]
 
   return (
@@ -59,7 +61,9 @@ export default function Pricing() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full">Entre em contato</Button>
+                <Link href='https://w.app/fernandapratesbitencourt'> <Button className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white">
+                    <Image src="/whatsapp-white.svg" alt="Whatsapp" width={18} height={18} className="mr-2" />
+                     Entre em contato</Button></Link>
               </CardFooter>
             </Card>
           </div>

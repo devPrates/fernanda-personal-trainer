@@ -5,7 +5,7 @@ const features = [
   {
     icon: NotebookPen,
     title: "Treinametos personalizados",
-    description: "Treino sob medida para resultados reais, com flexibilidade para treinar onde você preferir, seja em casa ou ao ar-livre.",
+    description: "Treino sob medida para resultados reais, com flexibilidade para treinar onde você preferir, seja na academia em casa ou ao ar-livre.",
   },
   {
     icon: UserPlus,
@@ -14,18 +14,18 @@ const features = [
   },
   {
     icon: Youtube,
-    title: "Biblioteca de Videos",
-    description: "Videos explicativos e orientações detalhadas ensinando a execução correta do movimento de cada exercicio.",
+    title: "Biblioteca de Vídeos",
+    description: "Vídeos explicativos e orientações detalhadas ensinando a execução correta do movimento de cada exercício.",
   },
   {
     icon: ClipboardPenLine,
-    title: "Avaliação Inicial online",
-    description: "Questionario de anamineze direto no aplicativo para entender seus objetivos.",
+    title: "Avaliação Inicial Online",
+    description: "Questionário de anamnese direto no aplicativo para que eu entenda seus objetivos.",
   },
   {
     icon: ClipboardList,
-    title: "Análise de Exercicios",
-    description: "Atraves de videos enviados no whatsapp para correção dos movimentos.",
+    title: "Análise de Exercícios",
+    description: "Através de vídeos enviados no WhatsApp para correção dos movimentos.",
   },
   {
     icon: Headset,
