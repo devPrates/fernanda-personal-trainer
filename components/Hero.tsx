@@ -67,6 +67,7 @@ export default function Hero() {
               alt="Hero Image"
               width={1600}
               height={700}
+              unoptimized={true}
             />
           </div>
         </div>

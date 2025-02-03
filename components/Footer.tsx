@@ -10,7 +10,7 @@ export default function Footer() {
     { name: 'Consultoria', id: 'services' },
     { name: 'Preços', id: 'prices' },
   ]
-  
+
   const handleScrollToSection = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
@@ -23,7 +23,7 @@ export default function Footer() {
         {/* Logo */}
         <div className="mb-4 lg:mb-0">
           <Image
-            src="/logo-completa.png" 
+            src="/logo-completa.png"
             alt="Logo da Empresa"
             width={250}
             height={70}
@@ -37,7 +37,7 @@ export default function Footer() {
             <button
               key={item.id}
               onClick={() => handleScrollToSection(item.id)}
-              className={`text-gray-300 hover:text-gray-400 px-3 py-2 rounded-md text-md font-medium`}
+              className={`text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md text-md font-medium`}
             >
               {item.name}
             </button>
@@ -46,11 +46,14 @@ export default function Footer() {
 
         {/* Redes sociais */}
         <div className="flex space-x-4">
-          <a href="#" className="text-gray-300 hover:text-white">
+          <a href="https://w.app/fernandapratesbitencourt" >
+            <Image src="/whatsapp.svg" alt="Whatsapp" width={24} height={24} />
+          </a>
+          <a href="https://www.facebook.com/fernanda.pratesbitencort/" className="text-blue-800 hover:text-blue-600">
             <Facebook className="w-6 h-6" />
           </a>
 
-          <a href="#" className="text-gray-300 hover:text-white">
+          <a href="https://www.instagram.com/personalfernandaprates" className="text-[#F56040] hover:text-[#F56040]">
             <Instagram className="w-6 h-6" />
           </a>
 
