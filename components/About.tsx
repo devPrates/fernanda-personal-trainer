@@ -68,10 +68,10 @@ export default function AboutSection() {
               transition={{ duration: 0.7 }}
             >
               <Image
-                src="/about.jpeg"
+                src="/about-test.jpeg"
                 alt={`${trainerInfo.name} - ${trainerInfo.title}`}
                 fill
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: 'fill' }}
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
                 className="rounded-lg shadow-lg"

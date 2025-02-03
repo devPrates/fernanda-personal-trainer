@@ -16,7 +16,7 @@ export default function Pricing() {
   const planFeatures = [
     "Acesso ao aplicativo.",
     "Atualização mensal de treino.",
-    "Anamnese inicial, medidas e foto.",
+    "Avaliação inicial, medidas e foto.",
     "Video dos exercícios no app.",
     "Análise de execução do exercício."
   ]

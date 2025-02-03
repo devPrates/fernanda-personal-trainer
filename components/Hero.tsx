@@ -15,7 +15,7 @@ export default function Hero() {
 
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-200 via-purple-300 to-purple-400 overflow-hidden">
+    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-200 via-purple-300 to-purple-400 overflow-hidden" id="home">
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
@@ -65,8 +65,8 @@ export default function Hero() {
             <Image
               src="/mobile-image.svg"
               alt="Hero Image"
-              width={600}
-              height={600}
+              width={1600}
+              height={700}
             />
           </div>
         </div>
