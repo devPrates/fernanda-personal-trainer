@@ -19,7 +19,7 @@ export default function Hero() {
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
-      <div className="container mx-auto px-6 py-12 relative z-10">
+      <div className="container mx-auto px-6 py-32 sm:py-12 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left text-white mb-8 md:mb-0">
             <div className="flex items-center justify-center md:justify-start mb-2">
