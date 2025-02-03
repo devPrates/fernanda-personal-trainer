@@ -4,8 +4,8 @@ import { NotebookPen, UserPlus, Youtube, ClipboardPenLine, ClipboardList, Headse
 const features = [
   {
     icon: NotebookPen,
-    title: "Treinametos personalizados",
-    description: "Treino sob medida para resultados reais, com flexibilidade para treinar onde você preferir, seja na academia em casa ou ao ar-livre.",
+    title: "Treino personalizado",
+    description: "Treino sob medida para resultados reais, com flexibilidade para treinar onde você preferir, seja na academia, em casa ou ao ar-livre.",
   },
   {
     icon: UserPlus,

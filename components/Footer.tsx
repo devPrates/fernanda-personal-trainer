@@ -18,15 +18,15 @@ export default function Footer() {
     }
   }
   return (
-    <footer className="text-white py-6">
+    <footer className="text-white py-6 ">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
         {/* Logo */}
         <div className="mb-4 lg:mb-0">
           <Image
-            src="/logo.png" // Altere o caminho para o arquivo da sua logo
+            src="/logo-completa.png" 
             alt="Logo da Empresa"
-            width={50}
-            height={50}
+            width={250}
+            height={70}
             className="mx-auto lg:mx-0"
           />
         </div>
@@ -63,7 +63,7 @@ export default function Footer() {
       {/* Informações abaixo da linha */}
       <div className="container mx-auto px-4 text-center">
         <p className="text-sm text-gray-400 mb-2">
-          CREF: 12345-G/XX - Fernanda Prates Bitencourt
+          CREF: 010462-G/MS - Fernanda Prates Bitencourt
         </p>
         <p className="text-sm text-gray-400">
           &copy; {new Date().getFullYear()} desenvolvido por Gabriel Prates.

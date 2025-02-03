@@ -7,9 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Fernanda Bitencourt Prersonal",
   description: "Fernanda Bitencourt Personal Trainer",
-  icons: {
-    icon: '/logo.png'
-  } 
+  icons: '/favicon.png'
 };
 
 export default function RootLayout({
